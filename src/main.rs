@@ -49,11 +49,15 @@ fn main() -> ! {
     blue.enable();
 
     loop {
-        red.slide(0);
-        green.slide(0);
-        blue.slide(0);
-        red.slide(255);
+        green.slide(128);
+        blue.slide(128);
+        red.slide(128);
         green.slide(255);
         blue.slide(255);
+        green.slide(0);
+        red.slide(255);
+        blue.slide(128);
+        green.slide(255);
+        blue.slide(0);
     }
 }
